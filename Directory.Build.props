@@ -1,0 +1,12 @@
+<Project>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Author>Muhammad Ajmal</Author>
+		<Version>1.0.0</Version>
+		<FileVersion>1.0.0.1</FileVersion>
+		<Product>Notifications</Product>
+	</PropertyGroup>
+</Project>

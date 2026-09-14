@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Notifications.Api.Integration.Tests/Notifications.Api.Integration.Tests.csproj" Id="eafc43e1-a9f3-4785-bc23-22ca22fed681" />
+    <Project Path="Tests/Notifications.Applications.Tests/Notifications.Applications.Tests.csproj" Id="0ad6721e-f89d-421f-89be-e849ec770c6d" />
+    <Project Path="Tests/Notifications.Domain.Tests/Notifications.Domain.Tests.csproj" Id="b75528fa-5e41-4482-8651-19741983a301" />
+    <Project Path="Tests/Notifications.Infrastructure.Tests/Notifications.Infrastructure.Tests.csproj" Id="9194b729-c13e-41b0-81a8-cc35cd4811bf" />
+  </Folder>
+  <Project Path="Notifications.Api/Notifications.Api.csproj" />
+  <Project Path="Notifications.Application/Notifications.Application.csproj" />
+  <Project Path="Notifications.Domain/Notifications.Domain.csproj" />
+  <Project Path="Notifications.Infrastructure/Notifications.Infrastructure.csproj" />
+</Solution>
