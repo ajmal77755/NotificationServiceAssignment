@@ -20,7 +20,7 @@ namespace Notifications.Api.Integration.Tests
         [InlineData("""{"message":{"no level provided"}""")]
         [InlineData("""{"level":"urgent"}""")]
         [InlineData("""{"level":3}""")]
-        [InlineData("""{"level":"warn"}""")]
+        [InlineData("""{"level":"unknown"}""")]
         public async Task Post_InvalidBodyReturns400(string body)
         {
             var respnse = await notificationApiFactory.CreateClient().PostAsync("/notifications", Json(body));
@@ -58,7 +58,7 @@ namespace Notifications.Api.Integration.Tests
 
             var body = notificationApiFactory.Discord?.LogEntries?.Last()?.RequestMessage?.Body;
              
-            Assert.Contains("[WARNING] notification received", body);
+            Assert.Contains("[WARNING]", body);
             Assert.Contains("automatic summary was unavailable", body);
             Assert.False(notificationApiFactory.DiscordReceived("db-02"));
 

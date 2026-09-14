@@ -35,7 +35,7 @@ namespace Notifications.Infrastructure.RateLimiting
 
                 logger.LogDebug("Outbound rate limit reached ({Count}/{Limit}). Waiting for {WaitTime} before sending the next notification.", sent.Count, limit, wait);
 
-                await Task.Delay(wait, cancellationToken);
+                await Task.Delay(wait, timeProvider, cancellationToken);
             }
             
         }
