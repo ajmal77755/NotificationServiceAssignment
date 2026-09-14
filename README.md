@@ -42,7 +42,7 @@ Secrets go in *Manage User Secrets* (development) or environment variables such 
 
 ## Tests
 
-`dotnet test` runs 20 tests. Unit tests cover the level rule, the outbox state machine, the rate-limit window (fake clock), the LLM adapter and the fallback. Integration tests boot the real API against a throwaway LocalDB database with WireMock standing in for Discord and a fake LLM, and prove that 12 warnings produce exactly 10 sends before the window slides. LocalDB must be running: `sqllocaldb start MSSQLLocalDB`.
+`dotnet test` runs tests. Unit tests cover the level rule, the outbox state machine, the rate-limit window (fake clock), the LLM adapter and the fallback. Integration tests boot the real API against a throwaway LocalDB database with WireMock standing in for Discord and a fake LLM, and prove that 12 warnings produce exactly 10 sends before the window slides. LocalDB must be running: `sqllocaldb start MSSQLLocalDB`.
 
 ## Structure
 
