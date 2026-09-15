@@ -61,4 +61,3 @@ tests/                        one test project per layer plus integration tests
 - Stored payloads may contain personal data supplied by senders; the raw payload is never posted to Discord, and the LLM is instructed not to repeat identifiers. No retention purge yet.
 - Not yet implemented: inbound API rate limiting, authentication, `GET /notifications/{id}`.
 
-ID-ware Confidential
